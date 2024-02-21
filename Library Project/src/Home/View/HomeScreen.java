@@ -41,7 +41,6 @@ public class HomeScreen extends javax.swing.JFrame {
         initComponents();
         viewGuess();
     }
-    
     // for view guess in scroll panel homescreen
     public void viewGuess(){
         ScrollPanel.removeAll();
@@ -53,7 +52,6 @@ public class HomeScreen extends javax.swing.JFrame {
             ScrollPanel.revalidate();
         });
     }
-    
     // for get data from database to show at table in searchscreen there no use any more
     public void getData(){
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
@@ -72,7 +70,6 @@ public class HomeScreen extends javax.swing.JFrame {
             model.addRow(row);
         });
     }
-    
     // for clear data when already add
     public void clear(){
         TXTName.setText("");
@@ -747,11 +744,6 @@ public class HomeScreen extends javax.swing.JFrame {
             } catch (ParseException ex) {
                 ex.printStackTrace();
             }
-            
-            
-        
-                
-            
             name1 = model.getValueAt(row, 1).toString();
             
             if(model.getValueAt(row, 2).toString().equalsIgnoreCase("Male")){
